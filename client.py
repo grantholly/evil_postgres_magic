@@ -1,8 +1,9 @@
 import psycopg2
 import asyncio
 
+
 conn = psycopg2.connect(host="localhost",
-                        dbname="me",
+                        dbname="danger",
                         user="listener",
                         password="imallears")
 conn.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
